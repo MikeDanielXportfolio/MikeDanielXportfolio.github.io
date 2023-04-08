@@ -1,0 +1,123 @@
+
+----------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>     "Esto se tendra que poner siempre "
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+
+	</head>
+	<body>
+		
+	</body>
+</html>
+----------------------------------------------------------------------------------------------------
+"esto se pone en el head"
+<title> Inicio </title>									"Lo que pone en el Tab"
+<link rel="stylesheet" href="Style V2.css">				"Que el projecto este linkeado a un Stylesheet
+														(hoja de estilo, diseno) y referencia stylev2.css"
+----------------------------------------------------------------------------------------------------
+"esto se pone dentro de body"
+
+<div id="header">										"El div esta para marcar una division, apartados"
+<div id="content">										"1 apartado, header, la parte de arriba, 2 apartado, content, el contenido"
+<div id="footer">										"supongo que podria existir este para la parte de abajo"
+	id="XXXX"											"id= es para asignar una variable, luego podemos usarla para cambiar cosas"
+<div class="two-columns"> VS <div id="Two-colums">
+		"Diferencias: Solo una cosa tiene el mismo ID, es como una PC, cada PC es diferente"
+		"Class, Si son 2 o mas, pon class en vez de id"
+
+En CSS
+id = #experience
+class = .masinfo
+----------------------------------------------------------------------------------------------------
+<h1>Bienvenido a mi pagina web</h1>						"h1 es: El titulo de la Pagina"
+<h2> Inicio</h2>										"h2 es: El subtitulo de la Pagina"
+<p>Esta es la pagina principal de mi Web</p>			"P es: frases normales"	
+<ul>													"Unordered list, lista sin orden"
+	<li><a href="Index V2.html">Inicio</a></li>			"List element, componentes de mi lista" + 
+</ul>													"<a> sirve para crear un link "
+----------------------------------------------------------------------------------------------------
+https://www.w3.org/WAI/tutorials/tables/
+<table cellspacing="0">									"Tabla + espacio entre bloques 0"			
+	<tr>												"La fila de una tabla <----------->"
+		<td>											"Bloques dentro de esa fila" "Las columna (de arriba a abajo) que necesitas"				
+		<th>											"lo mismo que el <td> pero en negrita"
+
+</table>
+
+<th colspan="4">										""
+</th>
+----------------------------------------------------------------------------------------------------
+
+<img src="Titi.jpg" alt="Picture Mike Daniel" height="250px">		"anadir una imagen, descripcion y dimensiones estandar"
+
+<form>													"Crear un formulario"
+	<label for="nombre-contacto">Nombre</label>					
+	<input type="text" id="nombre-contacto" name="nombre" />	
+	<label for="email-contacto">Email</label>					
+	<input type="email" id="email-contacto" name="email" />		
+	<label for="consulta-contacto">cual es tu consulta?</label>
+	<textarea id="consulta-contacto"></textarea>
+	<input type="submit" value="enviar">
+
+	"Label, etiqueta para saber que es input"
+	"Textfield, name= luego se entiende)"
+	"El id= cuando cliques en el label"
+	"Te manda al text field automaticamente"
+----------------------------------------------------------------------------------------------------
+
+Bloque <p> en line <strong></strong>
+	&nbsp; ---- espacios en blanco extra
+	&lt; &gt; ----- para que se vea el < y el >
+
+----------------------------------------------------------------------------------------------------
+<!--Commentario-->
+-----------------------------------------------------------------------------------------------------
+Abreviaciones Emmet pa ir mas rapido
+https://docs.emmet.io/abbreviations/syntax/
+
+table>tr>td*4  =
+
+<table>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+
+</table>
+
+div>(header>ul>li*2>a)+footer>p  = 
+
+<div>
+    <header>
+        <ul>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+        </ul>
+    </header>
+    <footer>
+        <p></p>
+    </footer>
+</div>
+
+div>(h2+h3+p) = 
+<div>
+	<h2></h2>
+	<h3></h3>
+	<p></p>
+</div>
+----------------------------------------------------------------------------------------------------
+<video controls width="250">
+    <source src="/media/cc0-videos/flower.webm" type="video/webm">
+
+    <source src="/media/cc0-videos/flower.mp4" type="video/mp4">
+
+    Download the
+    <a href="/media/cc0-videos/flower.webm">WEBM</a>
+    or
+    <a href="/media/cc0-videos/flower.mp4">MP4</a>
+    video.
+</video>
